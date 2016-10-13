@@ -1,0 +1,18 @@
+{
+  "name": "pushNotificationProcessor",
+  "version": "0.0.1",
+  "description": "A Serverless Project and its Serverless Plugin dependencies.",
+  "author": "me",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.5",
+    "mysql": "^2.11.1",
+    "object-sizeof": "^1.1.1",
+    "sqs-queue-parallel": "^0.1.6"
+  }
+}

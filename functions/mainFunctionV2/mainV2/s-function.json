@@ -1,0 +1,38 @@
+{
+  "name": "mainV2",
+  "runtime": "nodejs4.3",
+  "description": "Serverless Lambda function for project: pushNotificationProcessor",
+  "customName": "mainV2",
+  "customRole": "arn:aws:iam::272397067126:role/vpc_exec_test",
+  "handler": "mainV2/handler.handler",
+  "timeout": 300,
+  "memorySize": 128,
+  "authorizer": {},
+  "custom": {
+    "excludePatterns": []
+  },
+  "endpoints": [],
+  "events": [
+    {
+      "name": "mainFV2Schedule",
+      "type": "schedule",
+      "config": {
+        "schedule": "rate(5 minutes)",
+        "enabled": true
+      }
+    }
+  ],
+  "environment": {
+    "SERVERLESS_PROJECT": "${project}",
+    "SERVERLESS_STAGE": "${stage}",
+    "SERVERLESS_REGION": "${region}",
+    "ACCESS_KEY_ID": "AKIAIJD7RBV3VSTKEI6Q",
+    "SECRET_ACCESS_KEY": "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",
+    "REGION": "ap-southeast-1",
+    "LIMIT": "300"
+  },
+  "vpc": {
+    "securityGroupIds": [],
+    "subnetIds": []
+  }
+}
